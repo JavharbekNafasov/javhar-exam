@@ -1,0 +1,52 @@
+.sign {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        background-color: $dark-navy;
+        padding: 102px 165px;
+    }
+
+    &__heading {
+        max-width: 415px;
+        width: 100%;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    &__item {
+        background-color: $light-grey;
+    }
+    &__item-link {
+
+    }
+    &__item-icon {
+        float: left;
+    }
+    &__text-one {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    &__text-two {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+}

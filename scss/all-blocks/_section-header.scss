@@ -1,0 +1,91 @@
+.header {
+    
+    &__container {
+        padding: 22px 165px;
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__menu-wrapper {
+        display: none;
+    }
+    
+    &__scoot-logo {
+        width: 108px;
+        height: 29px;
+    }
+    
+    &__list {
+        display: flex;
+        margin-left: 58px;
+    }
+    
+    &__item {
+    }
+    
+    &__item + &__item {
+        margin-left: 32px;
+    }
+    
+    &__item-link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+    }
+    &__item-link:hover {
+        color: $yellow;
+    }
+    
+    &__btn {
+        display: inline-block;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $yellow;
+        padding: 14px 39px;
+        border: 3px solid $yellow;
+    }
+    &__btn:hover {
+        color: $yellow;
+        background-color: white;
+        border: 3px solid $yellow;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .header {
+        
+        &__nav {
+            padding: 22px 40px;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        
+        &__list {
+            display: none;
+        }
+        &__btn {
+            display: none;
+        }
+    }
+}

@@ -378,8 +378,6 @@ template {
 body {
   margin: 0;
   padding: 0;
-  padding-left: 24px;
-  padding-right: 24px;
   font-family: 'Lexend Deca', 'Fraunces', sans-serif;
 }
 
@@ -403,5 +401,223 @@ a {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.header__container {
+  padding: 22px 165px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu-wrapper {
+  display: none;
+}
+
+.header__scoot-logo {
+  width: 108px;
+  height: 29px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 58px;
+}
+
+.header__item + .header__item {
+  margin-left: 32px;
+}
+
+.header__item-link {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.header__item-link:hover {
+  color: #FCB72B;
+}
+
+.header__btn {
+  display: inline-block;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #FCB72B;
+  padding: 14px 39px;
+  border: 3px solid #FCB72B;
+}
+
+.header__btn:hover {
+  color: #FCB72B;
+  background-color: white;
+  border: 3px solid #FCB72B;
+}
+
+@media only screen and (max-width: 1060px) {
+  .header__nav {
+    padding: 22px 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__list {
+    display: none;
+  }
+  .header__btn {
+    display: none;
+  }
+}
+
+.sign__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #495567;
+  padding: 102px 165px;
+}
+
+.sign__heading {
+  max-width: 415px;
+  width: 100%;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+
+.sign__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sign__item {
+  background-color: #E5ECF4;
+}
+
+.sign__item-icon {
+  float: left;
+}
+
+.sign__text-one {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: #495567;
+}
+
+.sign__text-two {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: #495567;
+}
+
+.footer__container {
+  padding: 22px 165px;
+  background-color: #333A44;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__scoot-logo {
+  width: 108px;
+  height: 29px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 58px;
+}
+
+.footer__item + .footer__item {
+  margin-left: 32px;
+}
+
+.footer__item-link {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.footer__item-link:hover {
+  color: #FCB72B;
+}
+
+.footer__icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__icon-item + .footer__icon-item {
+  margin-left: 24px;
 }
 /*# sourceMappingURL=main.css.map */
