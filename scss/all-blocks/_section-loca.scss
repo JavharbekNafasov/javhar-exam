@@ -3,7 +3,6 @@
     
     &__container {
         padding: 0 165px;
-        border: 1px solid black;
     }
     &__list {
         display: flex;
@@ -14,7 +13,6 @@
         width: 100%;
         position: relative;
         padding-top: 136px;
-        border: 1px solid black;
     }
     &__item + &__item {
         margin-left: 20px;
@@ -75,4 +73,69 @@
         line-height: 25px;
         color: #939CAA;
     }
+}
+
+@media only screen and (max-width: 1100px) {
+    .loca {
+        
+        &__container {
+            padding: 0 98px;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            max-width: none;
+            width: 100%;
+            position: relative;
+            padding-top: 0;
+            padding-left: 175px;
+        }
+        &__item + &__item {
+            margin-left: 0;
+            margin-top: 40px;
+        }
+        &__item::before {
+            width: 15px;
+            height: 100%;
+            top: -95%;
+            left: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .loca {
+        
+        &__container {
+            padding: 0 32px;
+        }
+        &__item {
+            max-width: none;
+            width: 100%;
+            position: relative;
+            padding-top: 80px;
+            padding-left: 0;
+            text-align: center;
+        }
+        &__item + &__item {
+            margin-top: 48px;
+        }
+        &__item::before {
+            display: none;
+        }
+        &__item::after {
+            margin: auto;
+            width: 56px;
+            height: 56px;
+            padding: 5px;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        &__heading {
+            font-size: 20px;
+        }
+    }
+    
 }

@@ -627,7 +627,6 @@ a {
 
 .loca__container {
   padding: 0 165px;
-  border: 1px solid black;
 }
 
 .loca__list {
@@ -644,7 +643,6 @@ a {
   width: 100%;
   position: relative;
   padding-top: 136px;
-  border: 1px solid black;
 }
 
 .loca__item + .loca__item {
@@ -711,6 +709,64 @@ a {
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+
+@media only screen and (max-width: 1100px) {
+  .loca__container {
+    padding: 0 98px;
+  }
+  .loca__list {
+    display: block;
+  }
+  .loca__item {
+    max-width: none;
+    width: 100%;
+    position: relative;
+    padding-top: 0;
+    padding-left: 175px;
+  }
+  .loca__item + .loca__item {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .loca__item::before {
+    width: 15px;
+    height: 100%;
+    top: -95%;
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loca__container {
+    padding: 0 32px;
+  }
+  .loca__item {
+    max-width: none;
+    width: 100%;
+    position: relative;
+    padding-top: 80px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .loca__item + .loca__item {
+    margin-top: 48px;
+  }
+  .loca__item::before {
+    display: none;
+  }
+  .loca__item::after {
+    margin: auto;
+    width: 56px;
+    height: 56px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .loca__heading {
+    font-size: 20px;
+  }
 }
 
 .sign__container {
