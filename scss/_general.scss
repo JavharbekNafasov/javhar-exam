@@ -1,16 +1,23 @@
-* 
-*::after
-*::before {
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lexend Deca', 'Fraunces', sans-serif;
   // padding-left: 24px;
   // padding-right: 24px;
-  font-family: 'Lexend Deca', 'Fraunces', sans-serif;
   // background-color: ;
+}
+
+.container{
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -26,13 +33,4 @@ ul, ol {
 
 a {
   text-decoration: none;
-}
-
-.container{
-  max-width: 1440px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
 }

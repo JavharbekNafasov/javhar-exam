@@ -1,10 +1,11 @@
 .sign {
-
+    
     &__container {
         display: flex;
         justify-content: space-between;
-        background-color: $dark-navy;
+        align-items: center;
         padding: 102px 165px;
+        background-color: $dark-navy;
     }
 
     &__heading {
@@ -20,16 +21,22 @@
     }
     
     &__list {
-        display: flex;
+        // display: flex;
     }
     &__item {
+        display: inline-block;
+        border-radius: 4px;
         background-color: $light-grey;
     }
+    &__item + &__item {
+        margin-left: 18px;
+    }
     &__item-link {
-
+        display: flex;
+        padding: 9px 15px;
     }
     &__item-icon {
-        float: left;
+        margin-right: 12px;
     }
     &__text-one {
         font-family: 'Space Mono';
@@ -48,5 +55,37 @@
         line-height: 24px;
         letter-spacing: -0.892857px;
         color: #495567;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .sign {
+
+        &__container {
+            display: block;
+            text-align: center;
+            padding: 102px 165px;
+        }
+        &__heading {
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        &__list {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sign {
+        &__container {
+            padding: 88px 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sign {
     }
 }

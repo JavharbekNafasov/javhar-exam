@@ -1,22 +1,17 @@
 .header {
+    // border: 1px solid black;
     
     &__container {
-        padding: 22px 165px;
-    }
-    
-    &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 22px 165px;
+        // border: 1px solid black;
     }
     
     &__wrapper {
         display: flex;
         align-items: center;
-    }
-    
-    &__menu-wrapper {
-        display: none;
     }
     
     &__scoot-logo {
@@ -49,7 +44,7 @@
     }
     
     &__btn {
-        display: inline-block;
+        display: block;
         font-family: 'Space Mono';
         font-style: normal;
         font-weight: bold;
@@ -71,7 +66,7 @@
 @media only screen and (max-width: 1060px) {
     .header {
         
-        &__nav {
+        &__container {
             padding: 22px 40px;
         }
         

@@ -1,21 +1,20 @@
 .footer {
     
     &__container {
+        display: flex;
+        justify-content: space-between;
         padding: 22px 165px;
         background-color: #333A44;
     }
     
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     &__wrapper {
         display: flex;
-        align-items: center;
     }
     
+    &__scoot-link {
+        display: block;
+    }
+
     &__scoot-logo {
         width: 108px;
         height: 29px;
@@ -54,49 +53,52 @@
     }
 }
 
-// @media only screen and (max-width: 1060px) {
-//     .footer {
+@media only screen and (max-width: 1060px) {
+    .footer {
         
-//         &__nav {
-//             padding: 22px 40px;
-//         }
+        &__container {
+            padding: 22px 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
         
-//     }
-// }
+        &__container {
+            display: block;
+            padding: 64px 60px;
+        }
 
-// @media only screen and (max-width: 768px) {
-//     .footer {
-//         &__nav {
-//             display: block;
-//             padding: 64px 60px;
-//         }
+        &__nav {
+        }
 
-//         &__wrapper {
-//             display: block;
-//             text-align: center;
-//             margin-bottom: 85px;
-//         }
+        &__wrapper {
+            display: block;
+            text-align: center;
+            margin-bottom: 85px;
+        }
 
-//         &__scoot-wrapper {
-//             margin-bottom: 42px;
-//         }
+        &__scoot-link {
+            margin-bottom: 42px;
+        }
 
-//         &__list {
-//             display: block;
-//             text-align: center;
-//             align-items: center;
-//             margin-left: 0;
-//         }
-//         &__item + &__item {
-//             margin-top: 16px;
-//             margin-left: 0;
-//         }
+        &__list {
+            display: block;
+            text-align: center;
+            align-items: center;
+            margin-left: 0;
+        }
+        &__item + &__item {
+            margin-top: 16px;
+            margin-left: 0;
+        }
 
-//         &__icon-list {
-//             justify-content: center;
-//             display: flex;
-//             align-items: center;
-//         }
+        &__icon-list {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
         
-//     }
-// }
+    }
+}
