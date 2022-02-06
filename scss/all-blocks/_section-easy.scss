@@ -1,0 +1,135 @@
+.easy {
+    overflow: hidden;
+    margin-bottom: 160px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 165px;
+    }
+    &__wrapper {
+        max-width: 445px;
+        width: 100%;
+    }
+    &__heading {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        display: inline-block;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: $yellow;
+        padding: 14px 39px;
+        border: 3px solid $yellow;
+    }
+    &__btn:hover {
+        color: $yellow;
+        background-color: white;
+        border: 3px solid $yellow;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 445px;
+        height: 445px;
+        border-radius: 50%;
+        background-image: url(./../images/girl.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__image-wrapper::before {
+        content: "";
+        position: absolute;
+        width: 740px;
+        height: 150px;
+        background-image: url(./../../images/girlstrelka.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        bottom: 0;
+        left: -30%;
+    }
+    &__image-wrapper::after {
+        content: "";
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        background-image: url(./../../images/girlafter.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 115%;
+        z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .easy {
+
+        &__container {
+            flex-direction: column-reverse;
+            text-align: center;
+            padding: 0 95px;
+        }
+        &__heading {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        &__wrapper {
+            max-width: none;
+            width: 100%;
+        }
+        &__image-wrapper {
+            margin-bottom: 56px;
+        }
+        &__heading {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .easy {
+
+        &__container {
+            padding: 0 32px;
+        }
+        &__heading {
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        &__image-wrapper {
+            width: 310px;
+            height: 310px;
+        }
+        &__image-wrapper::before {
+            left: 0%;
+        }
+        &__image-wrapper::after {
+            width: 310px;
+            height: 310px;
+        }
+    }
+}
