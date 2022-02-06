@@ -1,4 +1,5 @@
 .hero {
+    overflow: hidden;
     margin-bottom: 160px;
 
     &__container {
@@ -7,11 +8,13 @@
         background-size: cover;
         padding: 153px 165px;
     }
+
     &__wrapper {
         max-width: 500px;
         width: 100%;
         color: #FFFFFF;
     }
+
     &__heading {
         font-family: 'Space Mono';
         font-style: normal;
@@ -21,6 +24,7 @@
         letter-spacing: -2.5px;
         margin-bottom: 40px;
     }
+
     &__text {
         font-family: 'Lexend Deca';
         font-style: normal;
@@ -31,6 +35,7 @@
         margin-left: 95px;
         position: relative;
     }
+
     &__text::before {
         content: "";
         position: absolute;
@@ -55,6 +60,7 @@
         top: 50%;
         left: 110%;
     }
+
     &__btn {
         display: inline-block;
         font-family: 'Space Mono';
@@ -83,6 +89,7 @@
             padding: 135px 95px 215px 95px;
             position: relative;
         }
+
         &__container::after {
             content: "";
             position: absolute;
@@ -94,20 +101,24 @@
             left: -10%;
             bottom: 40px;
         }
+
         &__wrapper {
             margin: auto;
             text-align: center;
         }
+
         &__text {
             margin-left: 0;
         }
+
         &__text::before {
             display: none;
         }
+
         &__text::after {
             display: none;
-            
         }
+
         &__btn {
             margin-left: 0;
         }
@@ -117,13 +128,16 @@
 @media only screen and (max-width: 680px) {
 
     .hero {
+
         &__container {
             padding: 115px 32px 180px 32px;
         }
+
         &__container::after {
             left: -50%;
             bottom: 35px;
         }
+        
         &__heading {
             font-size: 40px;
             line-height: 40px;

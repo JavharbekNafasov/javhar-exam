@@ -5,20 +5,22 @@
     &__container {
         padding: 0 165px;
     }
-    &__list {
-    }
+    
     &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__item + &__item {
         margin-top: 150px;
     }
+
     &__wrapper {
         max-width: 445px;
         width: 100%;
     }
+
     &__heading {
         font-family: 'Space Mono';
         font-style: normal;
@@ -29,6 +31,7 @@
         color: #495567;
         margin-bottom: 24px;
     }
+
     &__text {
         font-family: 'Lexend Deca';
         font-style: normal;
@@ -38,6 +41,7 @@
         color: #939CAA;
         margin-bottom: 40px;
     }
+
     &__btn {
         display: inline-block;
         font-family: 'Space Mono';
@@ -66,6 +70,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
     &__item:nth-child(1) &__image-wrapper {
         background-image: url(./../images/comingcity.jpg);
 
@@ -82,6 +87,7 @@
         top: 10%;
         right: 60%;
     }
+
     &__item:nth-child(2) &__image-wrapper::before {
         content: "";
         position: absolute;
@@ -106,6 +112,7 @@
         right: 115%;
         z-index: -1;
     }
+
     &__item:nth-child(2) &__image-wrapper::after {
         content: "";
         position: absolute;
@@ -126,24 +133,27 @@
         &__container {
             padding: 0 95px;
         }
-        &__list {
-        }
+
         .itemone {
             display: block;
             text-align: center;
         }
+
         .itemtwo {
             flex-direction: column-reverse;
             text-align: center;
         }
+
         &__wrapper {
             max-width: none;
             width: 100%;
         }
+
         &__image-wrapper {
             margin: auto;
             margin-bottom: 56px;
         }
+
         &__heading {
             margin-bottom: 40px;
         }
@@ -156,6 +166,7 @@
         &__container {
             padding: 0 32px;
         }
+
         &__heading {
             font-size: 32px;
             line-height: 32px;
@@ -165,22 +176,27 @@
             width: 310px;
             height: 310px;
         }
+
         &__image-wrapper::after {
             width: 310px;
             height: 310px;
         }
+
         &__item:nth-child(1) &__image-wrapper::after {
             width: 311px;
             height: 311px;
         }
+
         &__item:nth-child(2) &__image-wrapper::after {
             width: 311px;
             height: 311px;
         }
+
         &__item:nth-child(1) &__image-wrapper::before {
             top: 0;
             right: 60%;
         }
+        
         &__item:nth-child(2) &__image-wrapper::before {
             top: 0%;
         }

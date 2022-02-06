@@ -20,24 +20,25 @@
         color: #FFFFFF;
     }
     
-    &__list {
-        // display: flex;
-    }
     &__item {
         display: inline-block;
         border-radius: 4px;
         background-color: $light-grey;
     }
+
     &__item + &__item {
         margin-left: 18px;
     }
+
     &__item-link {
         display: flex;
         padding: 9px 15px;
     }
+
     &__item-icon {
         margin-right: 12px;
     }
+
     &__text-one {
         font-family: 'Space Mono';
         font-style: normal;
@@ -47,6 +48,7 @@
         letter-spacing: -0.446429px;
         color: #495567;
     }
+
     &__text-two {
         font-family: 'Space Mono';
         font-style: normal;
@@ -66,10 +68,12 @@
             text-align: center;
             padding: 102px 165px;
         }
+
         &__heading {
             margin: auto;
             margin-bottom: 40px;
         }
+        
         &__list {
             margin-left: auto;
             margin-right: auto;

@@ -25,9 +25,6 @@
         margin-left: 58px;
     }
     
-    &__item {
-    }
-    
     &__item + &__item {
         margin-left: 32px;
     }
@@ -68,9 +65,6 @@
         &__container {
             display: block;
             padding: 64px 60px;
-        }
-
-        &__nav {
         }
 
         &__wrapper {

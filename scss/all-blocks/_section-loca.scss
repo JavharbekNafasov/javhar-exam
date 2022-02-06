@@ -1,22 +1,27 @@
 .loca {
+    overflow: hidden;
     margin-bottom: 150px;
     
     &__container {
         padding: 0 165px;
     }
+    
     &__list {
         display: flex;
         justify-content: space-between;
     }
+    
     &__item {
         max-width: 350px;
         width: 100%;
         position: relative;
         padding-top: 136px;
     }
+    
     &__item + &__item {
         margin-left: 20px;
     }
+    
     &__item::before {
         display: block;
         position: absolute;
@@ -28,6 +33,7 @@
         background-color: $light-grey;
         z-index: -1;
     }
+    
     &__item::after {
         display: block;
         position: absolute;
@@ -39,21 +45,25 @@
         border-radius: 50%;
         background-color: $yellow;
     }
+    
     .logo1::after {
-        background-image: url(./../../images/locate1.svg);
+        background-image: url(./../images/locate1.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     .logo2::after {
-        background-image: url(./../../images/scooter2.svg);
+        background-image: url(./../images/scooter2.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     .logo3::after {
-        background-image: url(./../../images/enjoy3.svg);
+        background-image: url(./../images/enjoy3.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
+    
     &__heading {
         font-family: 'Space Mono';
         font-style: normal;
@@ -64,8 +74,8 @@
         color: #495567;
         margin-bottom: 27px;
     }
+    
     &__text {
-        
         font-family: 'Lexend Deca';
         font-style: normal;
         font-weight: normal;
@@ -81,9 +91,11 @@
         &__container {
             padding: 0 98px;
         }
+        
         &__list {
             display: block;
         }
+        
         &__item {
             max-width: none;
             width: 100%;
@@ -91,10 +103,12 @@
             padding-top: 0;
             padding-left: 175px;
         }
+        
         &__item + &__item {
             margin-left: 0;
             margin-top: 40px;
         }
+        
         &__item::before {
             width: 15px;
             height: 100%;
@@ -110,6 +124,7 @@
         &__container {
             padding: 0 32px;
         }
+        
         &__item {
             max-width: none;
             width: 100%;
@@ -118,12 +133,15 @@
             padding-left: 0;
             text-align: center;
         }
+        
         &__item + &__item {
             margin-top: 48px;
         }
+        
         &__item::before {
             display: none;
         }
+        
         &__item::after {
             margin: auto;
             width: 56px;
@@ -133,9 +151,9 @@
             left: 0;
             right: 0;
         }
+        
         &__heading {
             font-size: 20px;
         }
     }
-    
 }

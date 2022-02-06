@@ -488,6 +488,7 @@ a {
 }
 
 .hero {
+  overflow: hidden;
   margin-bottom: 160px;
 }
 
@@ -622,6 +623,7 @@ a {
 }
 
 .loca {
+  overflow: hidden;
   margin-bottom: 150px;
 }
 
@@ -674,19 +676,19 @@ a {
 }
 
 .loca .logo1::after {
-  background-image: url(./../../images/locate1.svg);
+  background-image: url(./../images/locate1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .loca .logo2::after {
-  background-image: url(./../../images/scooter2.svg);
+  background-image: url(./../images/scooter2.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .loca .logo3::after {
-  background-image: url(./../../images/enjoy3.svg);
+  background-image: url(./../images/enjoy3.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -848,7 +850,7 @@ a {
   position: absolute;
   width: 740px;
   height: 150px;
-  background-image: url(./../../images/girlstrelka.svg);
+  background-image: url(./../images/girlstrelka.svg);
   background-size: contain;
   background-repeat: no-repeat;
   bottom: 0;
@@ -860,7 +862,7 @@ a {
   position: absolute;
   width: 445px;
   height: 445px;
-  background-image: url(./../../images/girlafter.svg);
+  background-image: url(./../images/girlafter.svg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
@@ -1004,7 +1006,7 @@ a {
   position: absolute;
   width: 740px;
   height: 150px;
-  background-image: url(./../../images/strelkacity.svg);
+  background-image: url(./../images/strelkacity.svg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 10%;
@@ -1016,7 +1018,7 @@ a {
   position: absolute;
   width: 740px;
   height: 150px;
-  background-image: url(./../../images/girlstrelka.svg);
+  background-image: url(./../images/girlstrelka.svg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 15%;
@@ -1028,7 +1030,7 @@ a {
   position: absolute;
   width: 445px;
   height: 445px;
-  background-image: url(./../../images/girlafter.svg);
+  background-image: url(./../images/girlafter.svg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
@@ -1041,7 +1043,7 @@ a {
   position: absolute;
   width: 445px;
   height: 445px;
-  background-image: url(./../../images/girlafter.svg);
+  background-image: url(./../images/girlafter.svg);
   background-size: contain;
   background-repeat: no-repeat;
   top: 0;
@@ -1102,26 +1104,11 @@ a {
     height: 311px;
   }
   .coming__item:nth-child(1) .coming__image-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 740px;
-    height: 150px;
-    background-image: url(./../images/strelkacity.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     top: 0;
     right: 60%;
   }
   .coming__item:nth-child(2) .coming__image-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 740px;
-    height: 150px;
-    background-image: url(./../images/girlstrelka.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     top: 0%;
-    left: 55%;
   }
 }
 
