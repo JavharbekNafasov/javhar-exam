@@ -51,7 +51,7 @@
         padding: 14px 39px;
         border: 3px solid $yellow;
     }
-
+    
     &__btn:hover {
         color: $yellow;
         background-color: white;
@@ -70,12 +70,33 @@
 
 @media only screen and (max-width: 768px) {
     .header {
+        position: relative;
+        
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 16px;
+            top: 40%;
+            left: 40px;
+            background-image: url(./../images/headermenulogo.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
         
         &__list {
             display: none;
         }
+        
         &__btn {
             display: none;
+        }
+        
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            margin: auto;
         }
     }
 }

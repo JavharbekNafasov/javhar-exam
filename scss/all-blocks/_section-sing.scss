@@ -6,6 +6,10 @@
         align-items: center;
         padding: 102px 165px;
         background-color: $dark-navy;
+        background-image: url(./../images/signbgimg.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right bottom;
     }
 
     &__heading {
@@ -19,9 +23,16 @@
         letter-spacing: -2.14286px;
         color: #FFFFFF;
     }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
     
     &__item {
-        display: inline-block;
+        display: block;
+        max-width: 182px;
+        width: 100%;
         border-radius: 4px;
         background-color: $light-grey;
     }
@@ -91,5 +102,24 @@
 
 @media only screen and (max-width: 500px) {
     .sign {
+
+        &__list {
+            display: inline-block;
+            justify-content: center;
+        }
+
+        &__item {
+            margin: auto;
+        }
+
+        &__item + &__item {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+
+        &__heading {
+            font-size: 32px;
+            line-height: 32px;
+        }
     }
 }

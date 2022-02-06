@@ -479,11 +479,35 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+  .header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 40%;
+    left: 40px;
+    background-image: url(./../images/headermenulogo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .header__list {
     display: none;
   }
   .header__btn {
     display: none;
+  }
+  .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
   }
 }
 
@@ -1124,6 +1148,10 @@ a {
           align-items: center;
   padding: 102px 165px;
   background-color: #495567;
+  background-image: url(./../images/signbgimg.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
 }
 
 .sign__heading {
@@ -1138,8 +1166,19 @@ a {
   color: #FFFFFF;
 }
 
+.sign__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .sign__item {
-  display: inline-block;
+  display: block;
+  max-width: 182px;
+  width: 100%;
   border-radius: 4px;
   background-color: #E5ECF4;
 }
@@ -1201,6 +1240,26 @@ a {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .sign__list {
+    display: inline-block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sign__item {
+    margin: auto;
+  }
+  .sign__item + .sign__item {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .sign__heading {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1216,6 +1275,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__scoot-link {
@@ -1264,6 +1326,14 @@ a {
   margin-left: 24px;
 }
 
+.footer__svgicon {
+  display: inline-block;
+}
+
+.footer__svgicon:hover path {
+  fill: #E5ECF4;
+}
+
 @media only screen and (max-width: 1060px) {
   .footer__container {
     padding: 22px 40px;
@@ -1296,12 +1366,12 @@ a {
     margin-left: 0;
   }
   .footer__icon-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
